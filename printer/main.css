@@ -1,0 +1,10 @@
+body {
+    background-color: antiquewhite;
+}
+
+input{
+    margin-bottom: 5px;
+}
+input, textarea{
+    display: block;
+}
