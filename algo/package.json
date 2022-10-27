@@ -1,0 +1,13 @@
+{
+  "name": "algo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node scripts/unique-array.js",
+    "word": "node scripts/get-shortest-word.js",
+    "tree": "node scripts/christmas-tree.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
