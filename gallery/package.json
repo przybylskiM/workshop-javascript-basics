@@ -1,0 +1,15 @@
+{
+  "name": "gallery",
+  "version": "1.0.0",
+  "description": "* [] Build images/ directory with static files\r * [] Build UI: header, list of image and big images\r * [] Handle \"click\" event to thumb\r * [] Render image witch is zoomed version of thumb",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
