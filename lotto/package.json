@@ -1,0 +1,14 @@
+{
+  "name": "lotto",
+  "version": "1.0.0",
+  "description": "* [ ] Generate 6 random numbers (from 1 to 49)\r * [ ] Display 6 elements in UI\r * [ ] Numbers are sorted ascending",
+  "main": "",
+  "scripts": {
+    "start": "http-server"
+  },
+  "author": "Maciej Przybylski",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
