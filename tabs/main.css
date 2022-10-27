@@ -1,0 +1,9 @@
+.tabs {
+    width: 100px;
+}
+
+.tab {
+    width: auto;
+    border: solid black 2px;
+}
+
