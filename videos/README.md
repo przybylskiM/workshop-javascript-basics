@@ -2,7 +2,7 @@
 
 ## Features 
 
-* [] Display thumbnails with title
+* [x] Display thumbnails with title
 * [] Register user + store user in LocalStorage
 * [] Login user + store login status in SessionStorage
 * [] Logout user
@@ -312,5 +312,31 @@
             `;
         const $main = document.querySelector("main");
         $main.innerHTML = template;
+    }
+    ```
+    
+    26. Edit: `scripts/components/registration.js`: create `setupRegistration`
+
+    ```js
+    function setupRegistration() {
+        const $form = document.querySelector("#registration-form");
+        $form?.addEventListener("submit", (evt) => {
+            // Stop refresh the page
+            evt.preventDefault();
+            // Collect data from <form>
+            const formData = new FormData($form);
+            // Convert data to object literal , eg. { name: 'Piotr' }
+            const fields = Object.fromEntries(formData.entries());
+            // LocalStorage: get item
+            const freshSerializedUsers = localStorage.getItem("users") ?? "[]";
+            // Deserialization
+            const users = JSON.parse(freshSerializedUsers);
+            // Mutate an Array (add new item)
+            users.push(fields);
+            // Serialization
+            const serializedUsers = JSON.stringify(users);
+            // LocalStorage: update item
+            localStorage.setItem("users", serializedUsers);
+        });
     }
     ```
