@@ -13,23 +13,25 @@
 
 ## Build a project
 
-* Terminal: npm init -y
-* Terminal: npm i -D http-server
-* Create file: .gitignore
+* Terminal: `npm init -y`
+* Terminal: `npm i -D http-server`
+* Create file: `.gitignore`
 
     node_modules/
 
-* Create file: index.html
+* Create file: `index.html`
 
     hello world
 
-* Edit: package.json
+* Edit: `package.json`
 
+   ```json
     "scripts": {
         "start": "http-server"
     },
+    ```
 
-* Terminal: npm start
+* Terminal: `npm start`
 
 ## Step by step 🐾
 
@@ -39,19 +41,23 @@
     + styles/main.css
 2. Edit: main.js: create a main function and call it
 
+    ```js
     function main() {
         console.log('main');
     }
 
     main();
+    ```
 3. Edit: index.html: embed "scripts/main.js"
 
+    ```html
     <script src="scripts/main.js" defer></script>
-
+    ```
 4. Edit: index.html: embed "styles/main.css"
 
+    ```html
     <link rel="stylesheet" href="styles/main.css">
-
+    ```
 5. Edit: main.css: set background-color for `body`
 
     Use: https://colors.piecioshka.pl/
