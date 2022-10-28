@@ -61,11 +61,11 @@
 5. Edit: main.css: set background-color for `body`
 
     Use: https://colors.piecioshka.pl/
-
+    ```css
     body {
         background-color: #efefef;
     }
-
+    ```
 6. Edit: index.html: create basic layout
 
     ```html
