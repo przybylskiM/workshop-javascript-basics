@@ -5,7 +5,9 @@ function main() {
   //   fetchVideos().then((videos) => {
   //     displayVideos(videos);
   //   });
-  displayRegistration();
+  //   displayRegistration();
+
+  displayLogin();
 }
 
 //main();
