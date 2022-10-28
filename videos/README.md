@@ -158,3 +158,42 @@
     <link rel="stylesheet" href="styles/components/menu.css" />
     ```
     
+    12. Edit: data/videos.json: copy response of http://www.piecioshka.io/videos
+
+13. Edit: main.js: make a HTTP request
+
+    ```js
+    fetch("data/videos.json")
+        .then((response) => {
+            return response.json();
+        })
+        .then((videos) => {
+            console.log(videos)
+        });
+    ```
+
+14. Edit: main.js: create a function:
+
+    ```js
+    function displayVideos(videos) {
+        const $main = document.querySelector('main');
+        videos.forEach((video) => {
+            const $thumb = document.createElement('img');
+            $thumb.src = video.thumbUrl;
+            
+            const $title = document.createElement('h3');
+            $title.textContent = videos.title;
+            const $body = document.createElement('p');
+            $body.textContent = video.description;
+            
+            const $container = document.createElement('div');
+            $container.append($thumb);
+            $container.append($title);
+            $container.append($body);
+            
+            $main.append($container);
+        });
+    }
+    ```
+
+15. 
