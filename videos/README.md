@@ -109,7 +109,7 @@
         padding: 10px 0;
     }
     footer {
-        background-color: #eee;
+         background-color: #918bbe;
         text-align: center;
         padding: 5px 0;
     }
@@ -129,5 +129,32 @@
 
     ```html
     <!DOCTYPE html>
+    ```
+    
+    10. Edit: styles/components/menu.css: create basic layout
+
+    ```css
+    #menu {
+        background-color: #918bbe;
+    }
+    #menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #menu ul li {
+        margin: 5px;
+    }
+    #menu ul li a {
+        color: #fff;
+    }
+    ```
+
+11. Edit: index.html: add menu.css
+
+    ```html
+    <link rel="stylesheet" href="styles/components/menu.css" />
     ```
     
