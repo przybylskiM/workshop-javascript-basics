@@ -176,24 +176,50 @@
 
     ```js
     function displayVideos(videos) {
-        const $main = document.querySelector('main');
+        const $main = document.querySelector("main");
+        const $videoList = document.createElement('div');
+        $videoList.classList.add('video-list');
         videos.forEach((video) => {
-            const $thumb = document.createElement('img');
+             const $thumb = document.createElement("img");
             $thumb.src = video.thumbUrl;
             
-            const $title = document.createElement('h3');
-            $title.textContent = videos.title;
-            const $body = document.createElement('p');
+            const $title = document.createElement("h3");
+            $title.textContent = video.title;
+            const $body = document.createElement("p");
             $body.textContent = video.description;
             
-            const $container = document.createElement('div');
+            const $container = document.createElement("section");
+            $container.classList.add('video');
             $container.append($thumb);
             $container.append($title);
             $container.append($body);
             
-            $main.append($container);
+            $videoList.append($container);
         });
+          $main.append($videoList);
     }
     ```
 
-15. 
+15. Edit: styles/components/video-list.css
+
+    ```css
+    .video-list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .video-list .video {
+        width: 300px;
+        margin: 0 10px;
+    }
+    .video-list .video h3 {
+        margin: 0 0 5px 0;
+    }
+    ```
+
+16. Edit: index.html: attach `styles/components/video-list.css`
+
+    ```html
+    <link rel="stylesheet" href="styles/components/video-list.css" />
+    ```
+    

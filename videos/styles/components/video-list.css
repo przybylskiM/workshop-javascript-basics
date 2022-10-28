@@ -1,0 +1,14 @@
+.video-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .video-list .video {
+    width: 300px;
+    margin: 0 10px;
+  }
+  
+  .video-list .video h3 {
+    margin: 0 0 5px 0;
+  }
