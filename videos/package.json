@@ -1,0 +1,15 @@
+{
+  "name": "videos",
+  "version": "1.0.0",
+  "description": "* [] Display thumbnails with title\r * [] Register user + store user in LocalStorage\r * [] Login user + store login status in SessionStorage\r * [] Logout user\r * [] Profile page with other videos\r * [] Navigation",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
