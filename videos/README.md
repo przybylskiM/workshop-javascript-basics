@@ -114,3 +114,20 @@
         padding: 5px 0;
     }
     ```
+    
+    
+8. Edit: index.html: set title
+
+    ```html
+    <title>Videos</title>
+    ```
+    
+      Good practice: title should be before any `<link>` & `<script>` tags
+
+
+9. Edit: index.html: set document type
+
+    ```html
+    <!DOCTYPE html>
+    ```
+    
