@@ -3,7 +3,7 @@
 ## Features 
 
 * [x] Display thumbnails with title
-* [] Register user + store user in LocalStorage
+* [x] Register user + store user in LocalStorage
 * [] Login user + store login status in SessionStorage
 * [] Logout user
 * [] Profile page with other videos
@@ -36,11 +36,11 @@
 ## Step by step 🐾
 
 1. Create files:
-    + index.html
-    + scripts/main.js
-    + styles/main.css
+    + `index.html`
+    + `scripts/main.js`
+    + `styles/main.css`
     
-2. Edit: main.js: create a main function and call it
+2. Edit: `main.js`: create a main function and call it
 
     ```js
     function main() {
@@ -49,17 +49,17 @@
 
     main();
     ```
-3. Edit: index.html: embed "scripts/main.js"
+3. Edit: `index.html`: embed "scripts/main.js"
 
     ```html
     <script src="scripts/main.js" defer></script>
     ```
-4. Edit: index.html: embed "styles/main.css"
+4. Edit: `index.html`: embed "styles/main.css"
 
     ```html
     <link rel="stylesheet" href="styles/main.css">
     ```
-5. Edit: main.css: set background-color for `body`
+5. Edit: `main.css`: set background-color for `body`
 
     Use: https://colors.piecioshka.pl/
     ```css
@@ -67,7 +67,7 @@
         background-color: #efefef;
     }
     ```
-6. Edit: index.html: create basic layout
+6. Edit: `index.html`: create basic layout
 
     ```html
     <div id="app">
@@ -98,7 +98,7 @@
     </div>
     ```
     
-    7. Edit: main.css: draw basic layout
+    7. Edit: `main.css`: draw basic layout
 
     ```css
     #page {
@@ -116,7 +116,7 @@
     ```
     
     
-8. Edit: index.html: set title
+8. Edit: `index.html`: set title
 
     ```html
     <title>Videos</title>
@@ -125,13 +125,13 @@
       Good practice: title should be before any `<link>` & `<script>` tags
 
 
-9. Edit: index.html: set document type
+9. Edit: `index.html`: set document type
 
     ```html
     <!DOCTYPE html>
     ```
     
-    10. Edit: styles/components/menu.css: create basic layout
+10. Edit: `styles/components/menu.css`: create basic layout
 
     ```css
     #menu {
@@ -152,15 +152,15 @@
     }
     ```
 
-11. Edit: index.html: add menu.css
+11. Edit: `index.html`: add menu.css
 
     ```html
     <link rel="stylesheet" href="styles/components/menu.css" />
     ```
     
-    12. Edit: data/videos.json: copy response of http://www.piecioshka.io/videos
+12. Edit: `data/videos.json`: copy response of http://www.piecioshka.io/videos
 
-13. Edit: main.js: make a HTTP request
+13. Edit: `scripts/main.js`: make a HTTP request
 
     ```js
     fetch("data/videos.json")
@@ -172,7 +172,7 @@
         });
     ```
 
-14. Edit: main.js: create a function:
+14. Edit: `scripts/main.js`: create a function:
 
     ```js
     function displayVideos(videos) {
@@ -200,7 +200,7 @@
     }
     ```
 
-15. Edit: styles/components/video-list.css
+15. Edit: `styles/components/video-list.css`
 
     ```css
     .video-list {
@@ -217,13 +217,13 @@
     }
     ```
 
-16. Edit: index.html: attach `styles/components/video-list.css`
+16. Edit: `index.html`: attach `styles/components/video-list.css`
 
     ```html
     <link rel="stylesheet" href="styles/components/video-list.css" />
     ```
     
-17. Edit: main.js: extract making a request to data/videos.json to function
+17. Edit: `scripts/main.js  : extract making a request to data/videos.json to function
 
     ```js
     function fetchVideos() {
