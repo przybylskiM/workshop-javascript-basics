@@ -223,3 +223,22 @@
     <link rel="stylesheet" href="styles/components/video-list.css" />
     ```
     
+17. Edit: main.js: extract making a request to data/videos.json to function
+
+    ```js
+    function fetchVideos() {
+        return fetch("data/videos.json").then((response) => {
+            return response.json();
+        });
+    }
+    ```
+
+    so `main` function will looks like:
+
+    ```js
+    function main() {
+        fetchVideos().then((videos) => {
+            displayVideos(videos);
+        });
+    }
+    ```
