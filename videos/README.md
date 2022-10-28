@@ -39,6 +39,7 @@
     + index.html
     + scripts/main.js
     + styles/main.css
+    
 2. Edit: main.js: create a main function and call it
 
     ```js
@@ -72,6 +73,9 @@
     <div id="app">
         <header>
             <h1>Videos</h1>
+            <h1>
+                <a href="#">Videos</a>
+            </h1>
             <p>Zobacz swoje ulubione filmy</p>
 
             <nav id="menu">
@@ -92,4 +96,21 @@
             <p>Copyright &copy; 2022</p>
         </footer>
     </div>
+    ```
+    
+    7. Edit: main.css: draw basic layout
+
+    ```css
+    #page {
+        width: 960px;
+        margin: 0 auto;
+    }
+    main {
+        padding: 10px 0;
+    }
+    footer {
+        background-color: #eee;
+        text-align: center;
+        padding: 5px 0;
+    }
     ```

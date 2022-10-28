@@ -1,3 +1,18 @@
 body {
     background-color: #efefef;
 }
+
+#page {
+    width: 960px;
+    margin: 0 auto;
+  }
+  
+  main {
+    padding: 10px 0;
+  }
+  
+  footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 5px 0;
+  }
