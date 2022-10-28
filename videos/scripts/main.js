@@ -1,12 +1,8 @@
-function fetchVideos() {
-    return fetch("data/videos.json").then((response) => {
-      return response.json();
-    });
-  }
-  function main() {
-    fetchVideos().then((videos) => {
-      displayVideos(videos);
-    });
+function main() {
+  fetchVideos().then((videos) => {
+    displayVideos(videos);
+  });
 }
 
-main();
+//main();
+window.addEventListener("load", main);

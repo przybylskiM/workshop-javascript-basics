@@ -242,3 +242,24 @@
         });
     }
     ```
+    18. Edit: `scripts/components/video-list.js`: move `displayVideos` fn to this file
+
+19. Edit: `index.html`: attach `scripts/components/video-list.js`
+
+    ```html
+    <script src="scripts/components/video-list.js" defer></script>
+    ```
+
+20. Edit: `scripts/services/videos.js`: move `fetchVideo` fn to this file
+
+21. Edit: `index.html`: attach `scripts/services/videos.js`
+
+    ```html
+    <script src="scripts/services/videos.js" defer></script>
+    ```
+
+22. Edit: `scripts/main.js`: use `addEventListener` to wait for page load
+
+    ```js
+    window.addEventListener('load', main);
+    ```
